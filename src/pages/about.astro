@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const nombre = "Pablo"
+import 'bootstrap/dist/css/bootstrap.css';
 
-// Astro Carrousel
 import { Carousel } from 'astro-bootstrap';
 import type { CarouselSlideType } from 'astro-bootstrap';
+
 const slides: CarouselSlideType[] = [
   { img: '/images/portada06.jpg', alt: 'First placeholder', active: true },
   { img: '/images/portada09.jpg', alt: 'Second placeholder' },
@@ -15,25 +15,24 @@ const id = 'carouselExampleBasic';
 ---
 
 <Layout title="About">
- 
-    <h1>Welcome to About page {nombre.toUpperCase()}</h1>
-    <Carousel {id} fade>
-      <Carousel.Indicators {id} {slides} />
-      <Carousel.Inner>
-        {
-          slides.map((slide) => (
-            <Carousel.Item active={slide.active}>
-              <img
-                src={slide.img}
-                class="d-block w-100 img-fluid"
-                alt={slide.alt}
-              />
-            </Carousel.Item>
-          ))
-        }
-      </Carousel.Inner>
-      <Carousel.Controls id={id} />
-    </Carousel>
+  
+  <Carousel {id} fade>
+    <Carousel.Indicators {id} {slides} />
+    <Carousel.Inner>
+      {
+        slides.map((slide) => (
+          <Carousel.Item active={slide.active}>
+            <img
+              src={slide.img}
+              class="d-block w-100 img-fluid"
+              alt={slide.alt}
+            />
+          </Carousel.Item>
+        ))
+      }
+    </Carousel.Inner>
+    <Carousel.Controls id={id} />
+  </Carousel>
   
 </Layout>
 
