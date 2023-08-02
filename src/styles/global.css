@@ -20,7 +20,7 @@ body {
   /* background: linear-gradient(180deg, #ffffd8 0%, #fbd091 100%); */
 }
 a {
-  text-decoration: none;
+  text-decoration: none!important;
 }
 /* NavBaer
 --------------- */
