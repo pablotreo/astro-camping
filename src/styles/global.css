@@ -19,6 +19,9 @@ body {
   /* background: linear-gradient(180deg, #9ebd13 0%, #008552 100%);  */
   /* background: linear-gradient(180deg, #ffffd8 0%, #fbd091 100%); */
 }
+a {
+  text-decoration: none;
+}
 /* NavBaer
 --------------- */
 .titulo {

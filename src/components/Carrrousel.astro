@@ -14,19 +14,39 @@ const id = 'carouselExampleBasic';
 ---
 
 <Carousel {id} fade>
-  <Carousel.Indicators {id} {slides} />
+  <Carousel.Indicators {id} {slides}/>
+
   <Carousel.Inner>
     {
       slides.map((slide) => (
-        <Carousel.Item active={slide.active}>
+      
+      <Carousel.Item active={slide.active}>
           <img
             src={slide.img}
             class="d-block w-100 img-fluid"
             alt={slide.alt}
           />
+          <div class="centered">{slide.alt}</div>
         </Carousel.Item>
+      
       ))
     }
   </Carousel.Inner>
   <Carousel.Controls id={id} />
 </Carousel>
+
+<style>
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+</style>
