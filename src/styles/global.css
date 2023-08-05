@@ -26,6 +26,9 @@ a {
   text-decoration: none!important;
   color: black!important;
 }
+ul {
+  padding-left: 0rem;
+}
 /* NavBaer
 --------------- */
 .titulo {
