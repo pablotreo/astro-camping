@@ -25,7 +25,7 @@ const WeatherComponent = () => {
           {/* Mostrar los datos del tiempo obtenidos */}
           <p className='text-decoration-none'>
             Temperatura: {weatherData.current_weather.temperature}°C <br/>
-            Velocidad Viento: {weatherData.current_weather.windspeed}km/h<br/>
+            Viento: {weatherData.current_weather.windspeed}km/h<br/>
             Altitud: {weatherData.elevation}msnm 
           </p>
         </div>
