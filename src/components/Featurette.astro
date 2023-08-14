@@ -1,9 +1,10 @@
 ---
-
+import Prueba from "../components/Prueba.html"
 ---
 
 <!-- Features -->
-<div id="cabanas" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+<div id="cabanas" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto my-6">
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div>
@@ -14,14 +15,17 @@
       <div class="space-y-6 sm:space-y-8">
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
-            <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat">Cabañas.</span>
-              <span class="text-muted subtitulo"> Cabañas totalmente equipadas.</span>
+            <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat font-medium">Cabañas.</span>
+              <span class="text-muted subtitulo">Totalmente equipadas.</span>
             </h2>
             <p class="ms-4 lead descripcion">
               Capacidad 2, 4 y 6 personas, cocina comedor, dos habitaciones,
               televisión satelital, ropa de cama y toallas, vajilla, cocina,
               agua caliente y fria, heladera, galeria, parrillero, cochera.
             </p>
+            <!-- <slot>
+              <Prueba />
+            </slot> -->
         </div>
         <!-- End Title -->
       </div>
@@ -29,12 +33,13 @@
     <!-- End Col -->
   </div>
   <!-- End Grid -->
+  
 </div>
 <!-- End Features -->
 
 
 <!-- Features -->
-<div id="camping" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="camping" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto my-6">
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div class="order-md-2">
@@ -46,7 +51,7 @@
         
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
-          <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat">Camping.</span>
+          <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat font-medium">Camping.</span>
             <span class="text-muted subtitulo"> Para disfrutar en familia.</span>
           </h2>
           <p class="ms-4 lead descripcion">
@@ -57,9 +62,13 @@
             Mucho espacio verde y abundante arboleda para disfrutar de la
             naturaleza. Iluminación en todo el camping.
           </p>
+          <!-- <slot>
+            <Prueba />
+          </slot> -->
         </div>
         <!-- End Title -->
       </div>
+      
     </div>
     <!-- End Col -->
   </div>
@@ -68,7 +77,7 @@
 <!-- End Features -->
 
 <!-- Features -->
-<div id="motorhome" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div id="motorhome" class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto my-6">
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div>
@@ -79,7 +88,7 @@
       <div class="space-y-6 sm:space-y-8">
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
-          <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat">Motorhome.</span>
+          <h2 class="featurette-heading ms-4 mb-3"><span class="titulo-feat font-medium">Motorhome.</span>
             <span class="text-muted subtitulo"> Algo lindo para hacer.</span>
             </h2>
             <p class="ms-4 lead descripcion">
@@ -90,8 +99,12 @@
               arboleda para disfrutar de la naturaleza. Iluminación en todo el
               camping.
             </p>
+            <!-- <slot>
+              <Prueba />
+            </slot> -->
         </div>
         <!-- End Title -->
+      </div>
       </div>
     </div>
     <!-- End Col -->
@@ -99,3 +112,7 @@
   <!-- End Grid -->
 </div>
 <!-- End Features -->
+
+<style>
+ 
+</style>

@@ -41,10 +41,10 @@ ul {
 
 /* Carusel 
 ---------------- */
-/* Carousel base class */
+/* Carousel base class
 .carousel {
   margin-bottom: 4rem;
-}
+} */
 /* Centered text */
 .centered {
   position: absolute;
@@ -133,7 +133,7 @@ ul {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 6rem;
+    margin-top: 0rem;
   }
 }
 
